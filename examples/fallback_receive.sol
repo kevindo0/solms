@@ -15,6 +15,7 @@ contract HelloWorld {
     }
 }
 
+// 测试fallback 没有payable, 不能转账
 contract Test is HelloWorld {
     uint public x;
     fallback() external {
